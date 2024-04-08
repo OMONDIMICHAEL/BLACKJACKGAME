@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="blackJackIndex.css">
+</head>
+<body>
+    <header>
+        <article>
+            <section>
+                <h1>WELCOME TO THE CASINO.</h1><br>
+                <h2>Blackjack Wizards!!</h2>
+            </section>
+        </article>
+    </header>
+    <main>
+        <article id="mainArticle">
+            <article id="player1">
+                <section id="player1Sec">
+                    <h3>Player 1 History.</h3>
+                    <span id="player1Cards"><ul></ul></span>
+                    <span id="player1Sum"></span>
+                </section>
+            </article>
+            <article id="gameArticle">
+                <section>
+                    <p id="startMessage">Start Blackjack with the button below.</p>
+                    <span>Cards Picked: </span>
+                    <span id="cardsPicked"></span><br><br>
+                    <span>Sum of Cards: </span>
+                    <span id="sumCards"></span><br><br>
+                    <button id="startBlackjackbtn" onclick="startBlackJack()">START GAME.</button>
+                    <button id="continueNewGamebtn" onclick="continueNewGame()">NEW GAME.</button>
+                    <button id="newCardbtn" onclick="drawCard()">DRAW CARD.</button>
+                    <button id="saveCardbtn" onclick="saveCards()">SAVE CARD.</button><br>
+                    <span id="gameOver" style="color: white;"></span>
+                    <!-- <p id="aboutPlayer"></p> -->
+                    <span id="aboutPlayer"></span>
+                    <span id="coinsAdded">0</span>
+                </section>
+            </article>
+            <article id="player2">
+                <section><h3>Player 2 History.</h3></section>
+            </article>
+        </article>
+    </main>
+    <footer></footer>
+    <script src="blackJackIndex.js"></script>
+</body>
+</html>
